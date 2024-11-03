@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Adiciona o botão de menu no lado esquerdo -->
+    <ion-title>Nome da Máguina</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="image-container">
+    <img src="https://www.norimaq.com.br/wp-content/uploads/2021/07/envasadora-rm10el2-pq-min.png" alt="Máquina" class="top-image"/>
+  </div>
+
+  <!-- Formulário -->
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Peso (kg)</ion-label>
+      <ion-input type="number" [(ngModel)]= "formData.peso"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Velocidade de Produção (m/s)</ion-label>
+      <ion-input type="number" [(ngModel)]= "formData.velocidadeProducao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Volume (L)</ion-label>
+      <ion-input type="number" [(ngModel)]= "formData.volume"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Produtos por Minuto</ion-label>
+      <ion-input type="number" [(ngModel)]= "formData.produtosPorMinuto"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Detalhes</ion-label>
+      <ion-textarea [(ngModel)]=" formData.detalhes"></ion-textarea>
+    </ion-item>
+
+    <!-- Botão de Enviar -->
+    <ion-button expand="full" (click)= "submitForm()">Enviar</ion-button>
+  </ion-list>
+</ion-content>
