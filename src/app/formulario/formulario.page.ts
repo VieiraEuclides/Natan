@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: 'formulario.page.html',
-  styleUrls: ['formulario.page.scss'],
+  styleUrls: ['/formulario.page.scss'],
 })
 export class HomePage {
   // Definindo os dados do formulário
